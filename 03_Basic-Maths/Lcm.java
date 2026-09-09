@@ -23,7 +23,7 @@ public class Lcm {
         int b = sc.nextInt();
 
         // LCM x HCF(gcd) = a x b
-        System.out.println("LCM of " + a + " and " + b + " is " + (a / b) * computeGCD(a, b)); 
+        System.out.println("LCM of " + a + " and " + b + " is " + (a * b) / computeGCD(a, b)); 
 
         sc.close();
     }
