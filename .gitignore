@@ -2,6 +2,24 @@
 *.class
 *.exe
 
+# Compiled C/C++ binaries, objects, and libraries (Linux & Windows)
+*.out
+a.out
+*.o
+*.obj
+*.so
+*.a
+*.dylib
+*.dll
+
+# Extensionless Linux binaries in C++ folders
+OOPS in C++/**
+!OOPS in C++/**/
+!OOPS in C++/**/*.cpp
+!OOPS in C++/**/*.h
+!OOPS in C++/**/*.hpp
+!OOPS in C++/**/*.c
+
 # Log file
 *.log
 

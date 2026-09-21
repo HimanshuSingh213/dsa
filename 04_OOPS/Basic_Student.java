@@ -17,6 +17,13 @@ class Student {
         this.sgpa = sgpa;
     }
 
+    // Copy Constructor
+    public Student(Student SrcObj){
+        this.name = SrcObj.name;
+        this.age = SrcObj.age;
+        this.enrollNo = SrcObj.enrollNo;
+        this.sgpa = SrcObj.sgpa;
+    }
 
     // Methods
     public void setName(String n){
@@ -60,6 +67,10 @@ public class Basic_Student {
         S1.setSGPA(7.7F);
 
         S1.Display();
+
+
+        Student S3 = new Student(S2);
+        S3.Display();
     }
 }
 
