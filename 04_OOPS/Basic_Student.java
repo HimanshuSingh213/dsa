@@ -2,7 +2,7 @@ class Student {
     // Atrributes
     private String name;
     private int age;
-    private long enrollNo;
+    private String enrollNo;
     private float sgpa;
 
 
@@ -10,7 +10,7 @@ class Student {
     public Student(){}
 
     // Parameterized Constructor 
-    public Student(String name, int age, long enrollNo, float sgpa){
+    public Student(String name, int age, String enrollNo, float sgpa){
         this.name = name;
         this.age = age;
         this.enrollNo = enrollNo;
@@ -34,7 +34,7 @@ class Student {
         age = x;
     }
 
-    public void setEnrollNo(long x){
+    public void setEnrollNo(String x){
         enrollNo = x;
     }
 
@@ -58,12 +58,12 @@ public class Basic_Student {
         Student S1 = new Student();
         S1.Display();
 
-        Student S2 = new Student("Himanshu Singh", 19, 40216449825L, 8.56F);
+        Student S2 = new Student("Himanshu Singh", 19, "40216449825", 8.56F);
         S2.Display();
 
         S1.setName("Anuj Kumar");
         S1.setAge(20);
-        S1.setEnrollNo(3516449825L);
+        S1.setEnrollNo("03516449825");
         S1.setSGPA(7.7F);
 
         S1.Display();
